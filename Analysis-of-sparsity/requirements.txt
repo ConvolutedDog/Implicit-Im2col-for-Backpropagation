@@ -1,0 +1,4 @@
+torch==1.11.0
+torch_summary==1.4.5
+torchsummary==1.5.1
+torchvision==0.12.0
