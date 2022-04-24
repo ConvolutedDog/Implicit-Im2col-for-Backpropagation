@@ -7,7 +7,7 @@ from .. import functional as F
 
 from ..common_types import (_size_any_t, _size_1_t, _size_2_t, _size_3_t,
                             _ratio_3_t, _ratio_2_t, _size_any_opt_t, _size_2_opt_t, _size_3_opt_t)
-
+from .frameworkhelp import save_tensor
 
 class _MaxPoolNd(Module):
     __constants__ = ['kernel_size', 'stride', 'padding', 'dilation',
@@ -162,7 +162,7 @@ class MaxPool2d(_MaxPoolNd):
         feature_after_pooling = F.max_pool2d(input, self.kernel_size, self.stride,
                                             self.padding, self.dilation, self.ceil_mode,
                                             self.return_indices)
-        from framworkhelp import *
+        
         save_tensor(feature_after_pooling, 'torch.nn.MaxPool2d')
         return feature_after_pooling
 
@@ -618,7 +618,7 @@ class AvgPool2d(_AvgPoolNd):
     def forward(self, input: Tensor) -> Tensor:
         feature_after_pooling = F.avg_pool2d(input, self.kernel_size, self.stride,
                             self.padding, self.ceil_mode, self.count_include_pad, self.divisor_override)
-        from framworkhelp import *
+        
         save_tensor(feature_after_pooling, 'torch.nn.AvgPool2d')
         return feature_after_pooling
 
@@ -1032,7 +1032,7 @@ class AdaptiveMaxPool2d(_AdaptiveMaxPoolNd):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_pooling = F.adaptive_max_pool2d(input, self.output_size, self.return_indices)
-        from framworkhelp import *
+        
         save_tensor(feature_after_pooling, 'torch.nn.AdaptiveMaxPool2d')
         return feature_after_pooling
 
@@ -1140,7 +1140,7 @@ class AdaptiveAvgPool2d(_AdaptiveAvgPoolNd):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_pooling = F.adaptive_avg_pool2d(input, self.output_size)
-        from framworkhelp import *
+        
         save_tensor(feature_after_pooling, 'torch.nn.AdaptiveAvgPool2d')
         return feature_after_pooling
 

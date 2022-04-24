@@ -2,7 +2,7 @@ from .module import Module
 from .. import functional as F
 import torch
 from torch import Tensor
-
+from .frameworkhelp import save_tensor
 
 class _DropoutNd(Module):
     __constants__ = ['p', 'inplace']
@@ -59,7 +59,7 @@ class Dropout(_DropoutNd):
             self.p = 0.5
         mask = (torch.rand(input.shape)<1.-self.p).float()
         feature_after_dropout = torch.div(torch.mul(mask, input), 1.-self.p)
-        from framworkhelp import *
+        
         save_tensor(mask, 'torch.nn.Dropout.Mask')
         save_tensor(feature_after_dropout, 'torch.nn.Dropout')
         return feature_after_dropout

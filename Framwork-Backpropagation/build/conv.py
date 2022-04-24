@@ -14,6 +14,7 @@ from torch._torch_docs import reproducibility_notes
 
 from ..common_types import _size_1_t, _size_2_t, _size_3_t
 from typing import Optional, List, Tuple
+from .frameworkhelp import save_tensor
 
 convolution_notes = \
     {"groups_note": r"""* :attr:`groups` controls the connections between inputs and outputs.
@@ -397,7 +398,7 @@ class Conv2d(_ConvNd):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_conv2d = self._conv_forward(input, self.weight, self.bias)
-        from framworkhelp import *
+        
         save_tensor(feature_after_conv2d, 'torch.nn.Conv2d')
         return feature_after_conv2d
 

@@ -7,6 +7,7 @@ from .. import functional as F
 from .. import init
 
 from typing import Optional, Any
+from .frameworkhelp import save_tensor
 
 
 class _NormBase(Module):
@@ -138,7 +139,7 @@ class _BatchNorm(_NormBase):
             self.running_mean if not self.training or self.track_running_stats else None,
             self.running_var if not self.training or self.track_running_stats else None,
             self.weight, self.bias, bn_training, exponential_average_factor, self.eps)
-        from framworkhelp import *
+        
         save_tensor(feature_after_BatchNorm, 'torch.nn.BatchNorm')
         return feature_after_BatchNorm
 

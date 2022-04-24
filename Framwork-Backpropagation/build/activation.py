@@ -10,7 +10,7 @@ from torch.nn.init import xavier_normal_
 from torch.nn.parameter import Parameter
 from .module import Module
 from .. import functional as F
-
+from .frameworkhelp import save_tensor
 
 class Threshold(Module):
     r"""Thresholds each element of the input Tensor.
@@ -100,7 +100,7 @@ class ReLU(Module):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_relu = F.relu(input, inplace=self.inplace)
-        from framworkhelp import *
+        
         save_tensor(feature_after_relu, 'torch.nn.ReLU')
         return feature_after_relu
 
@@ -301,7 +301,7 @@ class Sigmoid(Module):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_sigmoid = torch.sigmoid(input)
-        from framworkhelp import *
+        
         save_tensor(feature_after_sigmoid, 'torch.nn.Sigmoid')
         return feature_after_sigmoid
 

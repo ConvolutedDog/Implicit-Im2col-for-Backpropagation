@@ -7,7 +7,7 @@ from .. import functional as F
 from .. import init
 from .module import Module
 from .lazy import LazyModuleMixin
-
+from .frameworkhelp import save_tensor
 
 class Identity(Module):
     r"""A placeholder identity operator that is argument-insensitive.
@@ -92,7 +92,7 @@ class Linear(Module):
 
     def forward(self, input: Tensor) -> Tensor:
         feature_after_linear = F.linear(input, self.weight, self.bias)
-        from framworkhelp import *
+        
         save_tensor(feature_after_linear, 'torch.nn.Linear')
         return feature_after_linear
 
