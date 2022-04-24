@@ -68,7 +68,7 @@ Install Succeed!
 
 Take the example model in `./example.py` to illustrate:
 
-![image](https://github.com/ConvolutedDog/Implicit-Im2col-for-Backpropagation/blob/main/Framwork-Backpropagation/pictures/examplemodel.PNG)
+![image](https://github.com/ConvolutedDog/Implicit-Im2col-for-Backpropagation/blob/main/Framwork-Backpropagation/pictures/examplemodel.png)
 
 ```shell
 (test) ~\Implicit-Im2col-for-Backpropagation-main\Framwork-Backpropagation> python example.py
