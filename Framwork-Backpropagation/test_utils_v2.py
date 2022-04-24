@@ -15,7 +15,7 @@
 #!/usr/bin/python3
 import torch
 import torchvision
-from utils.utils import gradient_backward_v2
+from utils.utils_v2 import gradient_backward_v2
 
 # __all__ is all the models we now support.
 __all__ = ['resnet18', 'resnet34', 'resnet50', 'resnet101',
