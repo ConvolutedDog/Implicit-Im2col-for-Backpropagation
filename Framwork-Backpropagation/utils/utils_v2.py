@@ -629,7 +629,7 @@ def make_dot(var, params=None):
 				for t in var.saved_tensors:
 					dot.edge(str(id(t)), str(id(var)))
 					add_nodes(t)
-	#print(var)
+	print(var)
 	add_nodes(var.grad_fn)
 	return dot
 
@@ -819,6 +819,7 @@ def get_layers(last_connections, model):
 
 	for i in range(len(last_connections)-1, -1, -1):
 		if not isinstance(last_connections[i], list):
+			# 单一层，无分支
 			current_layer_name = list(last_connections[i].keys())[0].split('_')[0]
 			if 'ReLU' in current_layer_name:
 				return_layers.insert(0, torch.nn.ReLU(inplace=True))
@@ -1379,7 +1380,7 @@ def gradient_backward_v2(model, img, label, num_class=1000, g_view=False):
 						return_dz[i][j][k] = tmp_dLoss_dz[-1]	
 					print('=========================== {0:3} Branch: '.format(str(len(parameters)-1-i))+'{0:11}'.format(tmp_layer['layer_name'])+' Backward End ======================')
 
-			#print(tmp_dLoss_dz[0].shape, tmp_dLoss_dz[1].shape)
+			print(tmp_dLoss_dz[0].shape, tmp_dLoss_dz[1].shape)
 			dLoss_dz = tmp_dLoss_dz[0] + tmp_dLoss_dz[1]
 		else:
 			print('Not completed in gradient_backward!')
