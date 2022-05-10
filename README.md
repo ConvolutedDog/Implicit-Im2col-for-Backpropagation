@@ -8,7 +8,7 @@ This project aims to obtain the configuration of the convolutional layers of som
 A framework to perform backpropagation designed by us. You maybe kown how to map the backpropagation process on hardware from this project. 
 
 ## GPU-experiments
-Comming soon.
+GPU experiments of our paper.
 
 ## License
 This project is licensed under the Apache-2.0 License.
