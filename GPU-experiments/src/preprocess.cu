@@ -18,7 +18,7 @@
  * @LastEditTime: 2022-04-25 8:05:44
  * @LastEditors: ConvolutedDog
  * @Description: With preprocess for data.
- * @FilePath: /GPU-experiments/src/nopreprocess.cu
+ * @FilePath: /GPU-experiments/src/preprocess.cu
  */
 #include "../include/common.h"
 #include "../include/helper.h"
