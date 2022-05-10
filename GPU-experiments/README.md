@@ -1,4 +1,7 @@
-# Generate parameters or some data for convolutional layers.
+# GPU-experiments of our paper.
+
+## Environment Preparation
+* Tesla A100 GPU
 
 ## Build.
 ```sh
