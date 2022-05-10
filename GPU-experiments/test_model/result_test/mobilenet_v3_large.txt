@@ -1,0 +1,375 @@
+Param Info:
+Batchsize=16/ Hi=225/ Wi=225/ Ho=112/ Wo=112/ C=3/ D=16/ Kh=3/ Kw=3/ S=2/ P=1/
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========PREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRE Forward Padding time: 0.028652 ms.[0m
+[31mPRE Forward Im2col time: 0.079258 ms.[0m
+[31mPRE Forward MMA time: 0.091873 ms.[0m
+[31mPRE Forward workload: 176518656.[0m
+[31mPRE Forward Total time: 0.199782 ms.[0m
+[31mPRE Forward Total gflops: 883.554587 gflops.[0m
+[31mPRE Forward M = 16, K = 27, N = 204304.[0m
+[32m
+Loss Start...[0m
+[31mPRE Loss Padding time: 0.138854 ms.[0m
+[31mPRE Loss Im2col time: 1.563873 ms.[0m
+[31mPRE Loss MMA time: 1.594225 ms.[0m
+[31mPRE Loss workload: 699840000.[0m
+[31mPRE Loss Total time: 3.296952 ms.[0m
+[31mPRE Loss Total gflops: 212.268761 gflops.[0m
+[31mPRE Loss M = 3, K = 144, N = 810000.[0m
+[32m
+Gradient Start...[0m
+[31mPRE Gradient LossNextLayer Padding time: 0.137196 ms.[0m
+[31mPRE Gradient Inputfeaturemap Padding time: 0.028815 ms.[0m
+[31mPRE Gradient Im2col time: 0.335196 ms.[0m
+[31mPRE Gradient MMA time: 154.515335 ms.[0m
+[31mPRE Gradient workload: 699840000.[0m
+[31mPRE Gradient Total time: 155.016539 ms.[0m
+[31mPRE Gradient Total gflops: 4.514615 gflops.[0m
+[31mPRE Gradient M = 16, K = 810000, N = 27.[0m
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========NOPREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRENO Forward Im2col time: 0.082903 ms.[0m
+[31mPRENO Forward MMA time: 0.091832 ms.[0m
+[31mPRENO Forward workload: 176518656.[0m
+[31mPRENO Forward Total time: 0.174735 ms.[0m
+[31mPRENO Forward Total gflops: 1010.205668 gflops.[0m
+[31mPRENO Forward M = 16, K = 27, N = 204304.[0m
+[32m
+Loss Start...[0m
+[31mPRENO Loss Im2col time: 1.645036 ms.[0m
+[31mPRENO Loss MMA time: 1.594532 ms.[0m
+[31mPRENO Loss workload: 699840000.[0m
+[31mPRENO Loss Total time: 3.239567 ms.[0m
+[31mPRENO Loss Total gflops: 216.028843 gflops.[0m
+[31mPRENO Loss M = 3, K = 144, N = 810000.[0m
+[32m
+Gradient Start...[0m
+[31mPRENO Gradient LossNextLayer Padding time: 0.137032 ms.[0m
+[31mPRENO Gradient Im2col time: 0.317358 ms.[0m
+[31mPRENO Gradient MMA time: 154.516190 ms.[0m
+[31mPRENO Gradient workload: 699840000.[0m
+[31mPRENO Gradient Total time: 154.970581 ms.[0m
+[31mPRENO Gradient Total gflops: 4.515954 gflops.[0m
+[31mPRENO Gradient M = 16, K = 810000, N = 27.[0m
+Param Info:
+Batchsize=16/ Hi=113/ Wi=113/ Ho=56/ Wo=56/ C=64/ D=64/ Kh=3/ Kw=3/ S=2/ P=1/
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========PREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRE Forward Padding time: 0.149299 ms.[0m
+[31mPRE Forward Im2col time: 0.403907 ms.[0m
+[31mPRE Forward MMA time: 0.441303 ms.[0m
+[31mPRE Forward workload: 3832676352.[0m
+[31mPRE Forward Total time: 0.994509 ms.[0m
+[31mPRE Forward Total gflops: 3853.838622 gflops.[0m
+[31mPRE Forward M = 64, K = 576, N = 51984.[0m
+[32m
+Loss Start...[0m
+[31mPRE Loss Padding time: 0.139940 ms.[0m
+[31mPRE Loss Im2col time: 1.555599 ms.[0m
+[31mPRE Loss MMA time: 1.635983 ms.[0m
+[31mPRE Loss workload: 15062925312.[0m
+[31mPRE Loss Total time: 3.331523 ms.[0m
+[31mPRE Loss Total gflops: 4521.333623 gflops.[0m
+[31mPRE Loss M = 64, K = 576, N = 204304.[0m
+[32m
+Gradient Start...[0m
+[31mPRE Gradient LossNextLayer Padding time: 0.137830 ms.[0m
+[31mPRE Gradient Inputfeaturemap Padding time: 0.149422 ms.[0m
+[31mPRE Gradient Im2col time: 1.540997 ms.[0m
+[31mPRE Gradient MMA time: 39.065907 ms.[0m
+[31mPRE Gradient workload: 15062925312.[0m
+[31mPRE Gradient Total time: 40.894158 ms.[0m
+[31mPRE Gradient Total gflops: 368.339296 gflops.[0m
+[31mPRE Gradient M = 64, K = 204304, N = 576.[0m
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========NOPREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRENO Forward Im2col time: 0.384512 ms.[0m
+[31mPRENO Forward MMA time: 0.441283 ms.[0m
+[31mPRENO Forward workload: 3832676352.[0m
+[31mPRENO Forward Total time: 0.825795 ms.[0m
+[31mPRENO Forward Total gflops: 4641.198335 gflops.[0m
+[31mPRENO Forward M = 64, K = 576, N = 51984.[0m
+[32m
+Loss Start...[0m
+[31mPRENO Loss Im2col time: 1.579459 ms.[0m
+[31mPRENO Loss MMA time: 1.637212 ms.[0m
+[31mPRENO Loss workload: 15062925312.[0m
+[31mPRENO Loss Total time: 3.216671 ms.[0m
+[31mPRENO Loss Total gflops: 4682.768637 gflops.[0m
+[31mPRENO Loss M = 64, K = 576, N = 204304.[0m
+[32m
+Gradient Start...[0m
+[31mPRENO Gradient LossNextLayer Padding time: 0.137687 ms.[0m
+[31mPRENO Gradient Im2col time: 1.431818 ms.[0m
+[31mPRENO Gradient MMA time: 39.066521 ms.[0m
+[31mPRENO Gradient workload: 15062925312.[0m
+[31mPRENO Gradient Total time: 40.636026 ms.[0m
+[31mPRENO Gradient Total gflops: 370.679092 gflops.[0m
+[31mPRENO Gradient M = 64, K = 204304, N = 576.[0m
+Param Info:
+Batchsize=16/ Hi=57/ Wi=57/ Ho=28/ Wo=28/ C=72/ D=72/ Kh=5/ Kw=5/ S=2/ P=2/
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========PREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRE Forward Padding time: 0.047473 ms.[0m
+[31mPRE Forward Im2col time: 0.318403 ms.[0m
+[31mPRE Forward MMA time: 0.352277 ms.[0m
+[31mPRE Forward workload: 3487795200.[0m
+[31mPRE Forward Total time: 0.718152 ms.[0m
+[31mPRE Forward Total gflops: 4856.627412 gflops.[0m
+[31mPRE Forward M = 72, K = 1800, N = 13456.[0m
+[32m
+Loss Start...[0m
+[31mPRE Loss Padding time: 0.040714 ms.[0m
+[31mPRE Loss Im2col time: 1.180692 ms.[0m
+[31mPRE Loss MMA time: 1.373757 ms.[0m
+[31mPRE Loss workload: 13474252800.[0m
+[31mPRE Loss Total time: 2.595164 ms.[0m
+[31mPRE Loss Total gflops: 5192.061837 gflops.[0m
+[31mPRE Loss M = 72, K = 1800, N = 51984.[0m
+[32m
+Gradient Start...[0m
+[31mPRE Gradient LossNextLayer Padding time: 0.038625 ms.[0m
+[31mPRE Gradient Inputfeaturemap Padding time: 0.047616 ms.[0m
+[31mPRE Gradient Im2col time: 1.202340 ms.[0m
+[31mPRE Gradient MMA time: 9.942282 ms.[0m
+[31mPRE Gradient workload: 13474252800.[0m
+[31mPRE Gradient Total time: 11.230863 ms.[0m
+[31mPRE Gradient Total gflops: 1199.752192 gflops.[0m
+[31mPRE Gradient M = 72, K = 51984, N = 1800.[0m
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========NOPREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRENO Forward Im2col time: 0.301752 ms.[0m
+[31mPRENO Forward MMA time: 0.352256 ms.[0m
+[31mPRENO Forward workload: 3487795200.[0m
+[31mPRENO Forward Total time: 0.654008 ms.[0m
+[31mPRENO Forward Total gflops: 5332.952247 gflops.[0m
+[31mPRENO Forward M = 72, K = 1800, N = 13456.[0m
+[32m
+Loss Start...[0m
+[31mPRENO Loss Im2col time: 1.302200 ms.[0m
+[31mPRENO Loss MMA time: 1.373368 ms.[0m
+[31mPRENO Loss workload: 13474252800.[0m
+[31mPRENO Loss Total time: 2.675569 ms.[0m
+[31mPRENO Loss Total gflops: 5036.033209 gflops.[0m
+[31mPRENO Loss M = 72, K = 1800, N = 51984.[0m
+[32m
+Gradient Start...[0m
+[31mPRENO Gradient LossNextLayer Padding time: 0.038625 ms.[0m
+[31mPRENO Gradient Im2col time: 1.109320 ms.[0m
+[31mPRENO Gradient MMA time: 9.942242 ms.[0m
+[31mPRENO Gradient workload: 13474252800.[0m
+[31mPRENO Gradient Total time: 11.090186 ms.[0m
+[31mPRENO Gradient Total gflops: 1214.970838 gflops.[0m
+[31mPRENO Gradient M = 72, K = 51984, N = 1800.[0m
+Param Info:
+Batchsize=16/ Hi=29/ Wi=29/ Ho=14/ Wo=14/ C=240/ D=240/ Kh=3/ Kw=3/ S=2/ P=1/
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========PREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRE Forward Padding time: 0.039588 ms.[0m
+[31mPRE Forward Im2col time: 0.108667 ms.[0m
+[31mPRE Forward MMA time: 0.421396 ms.[0m
+[31mPRE Forward workload: 3732480000.[0m
+[31mPRE Forward Total time: 0.569651 ms.[0m
+[31mPRE Forward Total gflops: 6552.219989 gflops.[0m
+[31mPRE Forward M = 240, K = 2160, N = 3600.[0m
+[32m
+Loss Start...[0m
+[31mPRE Loss Padding time: 0.035082 ms.[0m
+[31mPRE Loss Im2col time: 0.385536 ms.[0m
+[31mPRE Loss MMA time: 0.832410 ms.[0m
+[31mPRE Loss workload: 13951180800.[0m
+[31mPRE Loss Total time: 1.253028 ms.[0m
+[31mPRE Loss Total gflops: 11133.975169 gflops.[0m
+[31mPRE Loss M = 240, K = 2160, N = 13456.[0m
+[32m
+Gradient Start...[0m
+[31mPRE Gradient LossNextLayer Padding time: 0.033321 ms.[0m
+[31mPRE Gradient Inputfeaturemap Padding time: 0.039506 ms.[0m
+[31mPRE Gradient Im2col time: 0.386970 ms.[0m
+[31mPRE Gradient MMA time: 2.582160 ms.[0m
+[31mPRE Gradient workload: 13951180800.[0m
+[31mPRE Gradient Total time: 3.041956 ms.[0m
+[31mPRE Gradient Total gflops: 4586.253455 gflops.[0m
+[31mPRE Gradient M = 240, K = 13456, N = 2160.[0m
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========NOPREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRENO Forward Im2col time: 0.104059 ms.[0m
+[31mPRENO Forward MMA time: 0.421396 ms.[0m
+[31mPRENO Forward workload: 3732480000.[0m
+[31mPRENO Forward Total time: 0.525455 ms.[0m
+[31mPRENO Forward Total gflops: 7103.324623 gflops.[0m
+[31mPRENO Forward M = 240, K = 2160, N = 3600.[0m
+[32m
+Loss Start...[0m
+[31mPRENO Loss Im2col time: 0.445932 ms.[0m
+[31mPRENO Loss MMA time: 0.832614 ms.[0m
+[31mPRENO Loss workload: 13951180800.[0m
+[31mPRENO Loss Total time: 1.278546 ms.[0m
+[31mPRENO Loss Total gflops: 10911.756134 gflops.[0m
+[31mPRENO Loss M = 240, K = 2160, N = 13456.[0m
+[32m
+Gradient Start...[0m
+[31mPRENO Gradient LossNextLayer Padding time: 0.033423 ms.[0m
+[31mPRENO Gradient Im2col time: 0.355041 ms.[0m
+[31mPRENO Gradient MMA time: 2.582733 ms.[0m
+[31mPRENO Gradient workload: 13951180800.[0m
+[31mPRENO Gradient Total time: 2.971197 ms.[0m
+[31mPRENO Gradient Total gflops: 4695.474090 gflops.[0m
+[31mPRENO Gradient M = 240, K = 13456, N = 2160.[0m
+Param Info:
+Batchsize=16/ Hi=15/ Wi=15/ Ho=7/ Wo=7/ C=672/ D=672/ Kh=5/ Kw=5/ S=2/ P=2/
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========PREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRE Forward Padding time: 0.059945 ms.[0m
+[31mPRE Forward Im2col time: 0.229704 ms.[0m
+[31mPRE Forward MMA time: 3.225784 ms.[0m
+[31mPRE Forward workload: 23121100800.[0m
+[31mPRE Forward Total time: 3.515433 ms.[0m
+[31mPRE Forward Total gflops: 6577.027987 gflops.[0m
+[31mPRE Forward M = 672, K = 16800, N = 1024.[0m
+[32m
+Loss Start...[0m
+[31mPRE Loss Padding time: 0.054559 ms.[0m
+[31mPRE Loss Im2col time: 0.770294 ms.[0m
+[31mPRE Loss MMA time: 6.397481 ms.[0m
+[31mPRE Loss workload: 81285120000.[0m
+[31mPRE Loss Total time: 7.222334 ms.[0m
+[31mPRE Loss Total gflops: 11254.689312 gflops.[0m
+[31mPRE Loss M = 672, K = 16800, N = 3600.[0m
+[32m
+Gradient Start...[0m
+[31mPRE Gradient LossNextLayer Padding time: 0.046141 ms.[0m
+[31mPRE Gradient Inputfeaturemap Padding time: 0.059802 ms.[0m
+[31mPRE Gradient Im2col time: 0.767140 ms.[0m
+[31mPRE Gradient MMA time: 5.488107 ms.[0m
+[31mPRE Gradient workload: 81285120000.[0m
+[31mPRE Gradient Total time: 6.361190 ms.[0m
+[31mPRE Gradient Total gflops: 12778.288024 gflops.[0m
+[31mPRE Gradient M = 672, K = 3600, N = 16800.[0m
+[32mInitializing...[0m
+GPU Device 0: "Ampere" with compute capability 8.0
+
+[32mGpu Info...[0m
+[31mUsing device id: 0.[0m
+[31mCUDACC_VER_MAJOR: 11.[0m
+[31mmaxThreadsPerBlock: 1024.[0m
+[31mdevice_shared_limit: 167936.[0m
+[31mmultiProcessorCount: 108.[0m
+[32m
+==========NOPREPROCESS Test...==========[0m[32m
+Forward Start...[0m
+[31mPRENO Forward Im2col time: 0.211825 ms.[0m
+[31mPRENO Forward MMA time: 3.226583 ms.[0m
+[31mPRENO Forward workload: 23121100800.[0m
+[31mPRENO Forward Total time: 3.438408 ms.[0m
+[31mPRENO Forward Total gflops: 6724.363001 gflops.[0m
+[31mPRENO Forward M = 672, K = 16800, N = 1024.[0m
+[32m
+Loss Start...[0m
+[31mPRENO Loss Im2col time: 0.915988 ms.[0m
+[31mPRENO Loss MMA time: 6.402621 ms.[0m
+[31mPRENO Loss workload: 81285120000.[0m
+[31mPRENO Loss Total time: 7.318610 ms.[0m
+[31mPRENO Loss Total gflops: 11106.633752 gflops.[0m
+[31mPRENO Loss M = 672, K = 16800, N = 3600.[0m
+[32m
+Gradient Start...[0m
+[31mPRENO Gradient LossNextLayer Padding time: 0.046080 ms.[0m
+[31mPRENO Gradient Im2col time: 0.717046 ms.[0m
+[31mPRENO Gradient MMA time: 5.491138 ms.[0m
+[31mPRENO Gradient workload: 81285120000.[0m
+[31mPRENO Gradient Total time: 6.254264 ms.[0m
+[31mPRENO Gradient Total gflops: 12996.752193 gflops.[0m
+[31mPRENO Gradient M = 672, K = 3600, N = 16800.[0m
