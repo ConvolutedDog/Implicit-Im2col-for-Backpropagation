@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(GPUImplicit)
+project(GPU-experiments)
 
 find_package(CUDA QUIET REQUIRED)
 
