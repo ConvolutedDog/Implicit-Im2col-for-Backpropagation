@@ -9,12 +9,20 @@ make -j
 
 ## Run
 ```sh
-a
+cd test_model
+sh test.sh
 ```
+Or:
+```sh
+# Normal im2col with data reorganization of zero-spaces.
+./build/GPUImplicit preprocess batchsize C Hi Wi D Kh Kw P S 1
+# Our BP-im2col without data reorganization of zero-spaces.
+./build/GPUImplicit nopreprocess batchsize C Hi Wi D, Kh Kw P S 1
+```
+The explanation of relevant variables can be found in our paper.
 
-## Comming soon.
-
-
+## Other explanations
+Coming soon.
 
 ## License
 
