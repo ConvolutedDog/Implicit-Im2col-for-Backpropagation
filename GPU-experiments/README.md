@@ -25,7 +25,7 @@ Or:
 The explanation of relevant variables can be found in our paper.
 
 ## Other explanations
-Coming soon.
+Thanks Yangjie Zhou. (https://zenodo.org/record/5535284) and Li.Yinghan (https://github.com/Yinghan-Li) for their support.
 
 ## License
 
